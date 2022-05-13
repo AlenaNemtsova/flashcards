@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import './Header.scss';
 import bookIcon from '../assets/images/book-icon.svg'
 import brainIcon from '../assets/images/brain-icon.svg'
 import light from '../assets/images/lightbulbon.svg'
