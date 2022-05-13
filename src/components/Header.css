@@ -1,0 +1,13 @@
+.header {
+    width: 50%;
+    background-color: #FFD600;
+    margin: 0 auto;
+    position: sticky;
+    border-radius: 0px 0px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
