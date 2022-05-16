@@ -1,7 +1,8 @@
 import './App.css';
 import Header from './components/Header';
-import Card from './components/Card';
+import FlashCard from './components/FlashCard';
 import WordsList from './components/WordsList';
+// import './assets/styles/mainStyles.scss'; переменные не подключаются
 
 
 
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       <Header></Header>
 
-      <Card></Card>
+      <FlashCard></FlashCard>
       <WordsList></WordsList>
       
       <footer>

@@ -1,5 +1,5 @@
 .header {
-    width: 50%;
+    width: 60%;
     background-color: #FFD600;
     margin: 0 auto;
     position: sticky;
@@ -16,12 +16,11 @@ a {
     text-decoration: none;
 }
 
-.dictionary {
+.dictionary, .learn, .quiz {
+    transition: 400ms ease;
+
     &:hover {
-        img {
-        width: 50px;
-        height: 50px;
+        transform: scale(1.2);
     }
-    
 }
-}
+

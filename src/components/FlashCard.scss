@@ -1,0 +1,37 @@
+.flashcard-wrapper {
+    
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.flashcard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 50vh;
+    word-break: break-word; //breal-all?
+}
+
+.flashcard__title {
+    flex-basis: 10%;
+    border: 1px solid red;
+}
+
+.flashcard__source {
+    // flex-grow: 2;
+    // height: 50%;
+    flex-basis: 50%;
+    font-size: 4rem;
+    margin: 0; 
+    border: 1px solid green;
+    
+}
+
+.flashcard__transcription {
+    flex-basis: 20%;
+    margin: 0;
+    border: 1px solid blue;
+}

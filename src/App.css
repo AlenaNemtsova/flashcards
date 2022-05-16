@@ -1,7 +1,13 @@
 .App {
   text-align: center;
   width: 100vw;
+  height: 100vh;
+  background-color: #3E1F5E;
 }
+
+
+
+
 
 
 
@@ -10,10 +16,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-
-
-
 
 @keyframes App-logo-spin {
   from {

@@ -1,0 +1,17 @@
+table {
+    width: 70%;
+    margin: 20px auto;
+    background-color: white;
+    color: rgb(32, 32, 32);
+}
+
+th, td {
+    border: 1px solid grey;
+    
+}
+
+
+//раскрашиваем каждую вторую сктроку, кроме шапки
+tbody tr:nth-child(odd) {
+    background-color: rgb(231, 231, 231);
+  }
