@@ -1,14 +1,74 @@
 table {
+    table-layout: fixed;
     width: 70%;
     margin: 20px auto;
     background-color: white;
     color: rgb(32, 32, 32);
+    border-collapse: collapse;
 }
 
 th, td {
     border: 1px solid grey;
     
 }
+
+.row-control-btns {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.edit-btn {
+    background-color: #FFD600;
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 35px;
+    margin: 5px;
+    
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.delete-btn {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(205, 35, 35);
+    width: 40px;
+    height: 35px;
+    margin: 5px;
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.save-btn {
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    margin: 5px;
+    
+    background-color: #4DC861;
+    color: white;
+}
+
+.cancel-btn {
+    border: none;
+    background-color: rgb(231, 231, 231);
+    margin: 5px;
+    
+    img {
+        height: 33px;
+        width: 33px;
+        
+    }
+}
+
 
 
 //раскрашиваем каждую вторую сктроку, кроме шапки
