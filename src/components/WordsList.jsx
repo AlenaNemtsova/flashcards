@@ -1,8 +1,8 @@
 import React from 'react';
 import './WordsList.scss';
-import pencilIcon from '../assets/images/pencil-icon.svg';
+import pencilIcon from '../assets/images/pencil5-icon.svg';
 import deleteIcon from '../assets/images/trash-icon.svg';
-import cancelIcon from '../assets/images/cancel2-icon.svg'
+import cancelIcon from '../assets/images/cancel2-cross-icon.svg'
 
 const rows = [
     { "id": "11346", "english": "street", "transcription": "[ stri:t ]", "russian": "улица", "tags": "овощи", "tags_json": "[\"u043eu0432u043eu0449u0438\"]" },
@@ -11,7 +11,7 @@ const rows = [
 
 function WordsList() {
 
-    let isEditMode = false;
+    let isEditMode = true;
 
     return (
         <React.Fragment>
@@ -57,6 +57,8 @@ function WordsList() {
 
 
             </table>
+
+            
 
 
 

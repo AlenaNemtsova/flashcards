@@ -25,7 +25,16 @@ th, td {
     width: 40px;
     height: 35px;
     margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     
+    &:hover {
+        background-color: #dbb700;
+    }
+    &:active {
+        box-shadow: 0 3px 5px #575555 inset;
+    }
+
+
 
     img {
         width: 20px;
@@ -36,10 +45,19 @@ th, td {
 .delete-btn {
     border: none;
     border-radius: 5px;
-    background-color: rgb(205, 35, 35);
+    background-color: rgb(202, 55, 55);
     width: 40px;
     height: 35px;
     margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+
+    &:hover {
+        background-color: rgb(152, 54, 54);
+    }
+
+    &:active {
+        box-shadow: 0 3px 5px #2d2b2b inset;
+    }
 
     img {
         width: 20px;
@@ -53,21 +71,47 @@ th, td {
     height: 35px;
     margin: 5px;
     
-    background-color: #4DC861;
+    background-color: rgb(56, 198, 79);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     color: white;
+
+    &:hover {
+        background-color: rgb(47, 139, 62);
+    }
+
+    &:active {
+        box-shadow: 0px 3px 5px 1px #343333 inset;
+        background-color: rgb(44, 131, 58);
+    }
 }
 
 .cancel-btn {
     border: none;
+    border-radius: 5px;
     background-color: rgb(231, 231, 231);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    background-color: #d01313;
+    
     margin: 5px;
+    width: 35px;
+    height: 35px;
     
     img {
-        height: 33px;
-        width: 33px;
+        height: 20px;
+        width: 20px;
+        
         
     }
+
+    &:hover {
+        background-color: #991a1a;
+    }
+    &:active {
+        box-shadow: 0px 3px 5px 1px #343333 inset;
+        background-color: #902121;
+    }
 }
+
 
 
 
