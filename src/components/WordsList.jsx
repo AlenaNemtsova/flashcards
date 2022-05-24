@@ -11,7 +11,7 @@ const rows = [
 
 function WordsList() {
 
-    let isEditMode = true;
+    let isEditMode = false;
 
     return (
         <React.Fragment>

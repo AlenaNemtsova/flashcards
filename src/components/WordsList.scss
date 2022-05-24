@@ -19,7 +19,7 @@ th, td {
 }
 
 .edit-btn {
-    background-color: #FFD600;
+    background-color: rgb(255, 214, 0);
     border: none;
     border-radius: 5px;
     width: 40px;
@@ -28,13 +28,13 @@ th, td {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     
     &:hover {
-        background-color: #dbb700;
+        // background-color: #dbb700;
+        background-color: rgb(252, 225, 92)
     }
     &:active {
+        background-color: rgb(216, 180, 3);
         box-shadow: 0 3px 5px #575555 inset;
     }
-
-
 
     img {
         width: 20px;
@@ -52,10 +52,12 @@ th, td {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 
     &:hover {
-        background-color: rgb(152, 54, 54);
+        // background-color: rgb(152, 54, 54);
+        background-color: rgb(247, 99, 99)
     }
 
     &:active {
+        background-color: rgb(165, 42, 42);
         box-shadow: 0 3px 5px #2d2b2b inset;
     }
 
@@ -76,7 +78,8 @@ th, td {
     color: white;
 
     &:hover {
-        background-color: rgb(47, 139, 62);
+        // background-color: rgb(47, 139, 62);
+        background-color: rgb(105, 225, 125);
     }
 
     &:active {
@@ -90,7 +93,7 @@ th, td {
     border-radius: 5px;
     background-color: rgb(231, 231, 231);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
-    background-color: #d01313;
+    background-color: rgb(208, 19, 19);
     
     margin: 5px;
     width: 35px;
@@ -104,11 +107,12 @@ th, td {
     }
 
     &:hover {
-        background-color: #991a1a;
+        // background-color: #991a1a;
+        background-color: rgb(238, 85, 85);
     }
     &:active {
         box-shadow: 0px 3px 5px 1px #343333 inset;
-        background-color: #902121;
+        background-color: rgb(144, 33, 33);
     }
 }
 
