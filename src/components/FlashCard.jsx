@@ -1,7 +1,9 @@
-import React from 'react';
+import ButtonTranslate from './ButtonTranslate';
 import './FlashCard.scss';
 
 function FlashCard() {
+
+    
     return (
         <div className='flashcard-wrapper'>
             <div className='flashcard'>
@@ -10,7 +12,8 @@ function FlashCard() {
                 <p className='flashcard__source'>Англ. термин </p>
                 {/* <p className='flashcard__translation'>{}</p> */}
                 <p className='flashcard__transcription'>Транскрипция</p>
-                <button className='translate-btn'>Перевод</button>
+                <ButtonTranslate className="translate-btn"></ButtonTranslate> 
+                
             </div>
 
         </div>
