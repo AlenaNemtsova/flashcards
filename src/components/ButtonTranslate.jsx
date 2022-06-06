@@ -8,13 +8,10 @@ function ButtonTranslate() {
         setPressed(!pressed);
     }
 
-
-
-
     return (
-        <div>
-            <button               onClick={handleChange}
-                 >{pressed ? "русский перевод" : "Перевод"}</button>
+        <div className="flashcard__translation">
+            {pressed ? <span>мышь</span> : 
+            <button className="translate-btn" onClick={handleChange}>Перевод</button>}
         </div>
     )
 }
