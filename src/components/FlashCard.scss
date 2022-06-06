@@ -17,7 +17,7 @@
 }
 
 .flashcard__title {
-    flex-basis: 10%;
+    flex-basis: 5%;
     margin: 10px auto;
 }
 
@@ -31,14 +31,18 @@
 }
 
 .flashcard__transcription {
-    flex-basis: 15%;
+    flex-basis: 20%;
     margin: 0 auto 10px;
 }
 
+.flashcard__translation {
+    flex-basis: 25%;
+}
+
 .translate-btn {
-    flex-basis: 10%;
-    width: 20%;
-    margin: 0 auto;
+    font-size: 16px;
+    width: 25%;
+    height: 35px;
     color: white;
     background-color: rgb(56, 198, 79);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
