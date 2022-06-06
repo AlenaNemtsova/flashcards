@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './WordsList.scss';
 import pencilIcon from '../assets/images/pencil5-icon.svg';
 import deleteIcon from '../assets/images/trash-icon.svg';
@@ -10,6 +10,10 @@ function WordsList({rows}) {
     const [isEditMode, setIsEditMode] = useState(false);
 
     const handleEdit = () => {
+        setIsEditMode(!isEditMode);
+    }
+
+    const handleCancel = () => {
         setIsEditMode(!isEditMode);
     }
 
@@ -42,11 +46,11 @@ function WordsList({rows}) {
                                 {isEditMode ?
                                     <>
                                         <button className='save-btn'>Сохранить</button>
-                                        <button className='cancel-btn'><img src={cancelIcon}></img></button>
+                                        <button className='cancel-btn' onClick={handleCancel}><img src={cancelIcon}></img></button>
                                     </> :
                                     <>
                                         <button className='edit-btn' onClick={handleEdit}><img src={pencilIcon}></img></button>
-                                        <button className='delete-btn'><img src={deleteIcon}></img></button>
+                                        <button className='delete-btn' ><img src={deleteIcon}></img></button>
                                     </>
                                 }
                             </td>
