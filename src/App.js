@@ -2,10 +2,12 @@ import './App.css';
 import Header from './components/Header';
 import FlashCard from './components/FlashCard';
 import WordsList from './components/WordsList';
+import CardsContainer from './components/CardsContainer';
+
 // import './assets/styles/mainStyles.scss'; переменные не подключаются
 
 const rows = [
-  { "id": "11346", "english": "street", "transcription": "[ stri:t ]", "russian": "улица", "tags": "овощи", "tags_json": "[\"u043eu0432u043eu0449u0438\"]" },
+  { "id": "11346", "english": "street", "transcription": "[ stri:t ]", "russian": "улица", "tags": "в городе", "tags_json": "[\"u043eu0432u043eu0449u0438\"]" },
 
   {"id":"11347","english":"car","transcription":"[ kɑ: ]","russian":"автомобиль","tags":"","tags_json":"[\"\"]"},
 
@@ -20,8 +22,9 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-
-      <FlashCard rows={rows}></FlashCard>
+      <CardsContainer rows={rows}>
+        <FlashCard></FlashCard>
+      </CardsContainer>
       <WordsList rows={rows}></WordsList>
       
       <footer>
