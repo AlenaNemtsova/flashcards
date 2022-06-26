@@ -6,6 +6,7 @@ import cancelIcon from '../assets/images/cancel2-cross-icon.svg'
 
 function TableRow({ row }) {
     const [isEditMode, setIsEditMode] = useState(false);
+    const [editedField, setEditedField] = useState('');
 
     const handleEdit = () => {
         setIsEditMode(!isEditMode);
@@ -15,10 +16,16 @@ function TableRow({ row }) {
         setIsEditMode(!isEditMode);
     }
 
+    const handleChangeField = (event) => {
+        setEditedField(event.target.value);
+        console.log(event.target.value);
+    }
+    
+
     return (
         <>
             <td>
-                {isEditMode ? <input type="text" defaultValue={row.english}></input> : row.english}
+                {isEditMode ? <input type="text" defaultValue={editedField ? editedField.english : row.english} onChange={handleChangeField}></input> : row.english}
             </td>
 
             <td>
