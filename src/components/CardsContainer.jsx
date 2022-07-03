@@ -31,6 +31,7 @@ function CardsContainer({ rows }) {
         russian={rows[index].russian}
         tags={rows[index].tags}
         pressed = {pressed}
+        setPressed = {setPressed}
       ></FlashCard>
 
       <button className="forward-btn" onClick={handleClickForward}>
