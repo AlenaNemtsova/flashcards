@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
 function ButtonTranslate(props) {
-    const [pressed, setPressed] = useState(false);
-
     const handleChange = () => {
-        setPressed(!pressed);
+        props.setPressed(!props.pressed);
     }
+    console.log(props);
 
     return (
         <div className="flashcard__translation">
-            {pressed ? <span>{props.russian}</span> : 
+            {props.pressed ? <span>{props.russian}</span> : 
             <button className="translate-btn" onClick={handleChange}>Перевод</button>}
         </div>
     )

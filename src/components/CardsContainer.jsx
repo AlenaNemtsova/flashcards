@@ -6,13 +6,16 @@ import arrowRight from "../assets/images/right-arrow.svg";
 
 function CardsContainer({ rows }) {
   const [index, setIndex] = useState(0);
+  const [pressed, setPressed] = useState(false);
 
   const handleClickForward = () => {
     setIndex(index >= rows.length - 1 ? 0 : index + 1);
+    setPressed(false);
   };
 
   const handleClickBack = () => {
     setIndex(index <= 0 ? rows.length - 1 : index - 1);
+    setPressed(false);
   };
 
   return (
@@ -27,6 +30,7 @@ function CardsContainer({ rows }) {
         transcription={rows[index].transcription}
         russian={rows[index].russian}
         tags={rows[index].tags}
+        pressed = {pressed}
       ></FlashCard>
 
       <button className="forward-btn" onClick={handleClickForward}>
