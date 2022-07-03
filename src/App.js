@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <CardsContainer rows={rows}>
-        <FlashCard></FlashCard>
+        <FlashCard />
       </CardsContainer>
       <WordsList rows={rows}></WordsList>
       
