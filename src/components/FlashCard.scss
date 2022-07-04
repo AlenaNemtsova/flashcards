@@ -1,11 +1,14 @@
 .flashcard-wrapper {
-    
     width: 50%;
-    // margin: 20px auto;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
-    
 }
+
+.animated {
+        animation: flipInX;
+        animation-duration: 1s;
+    }
+
 
 .flashcard {
     display: flex;
@@ -22,8 +25,6 @@
 }
 
 .flashcard__source {
-    // flex-grow: 2;
-    // height: 50%;
     flex-basis: 40%;
     font-size: 4rem;
     margin: 10px auto; 
@@ -37,11 +38,11 @@
 
 .flashcard__translation {
     flex-basis: 25%;
+    font-size: 20px;
 }
 
 .translate-btn {
     font-size: 16px;
-    // width: 25%;
     height: 35px;
     color: white;
     background-color: rgb(56, 198, 79);
@@ -53,3 +54,4 @@
         background-color: rgb(105, 225, 125);
     }
 }
+
