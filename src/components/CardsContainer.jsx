@@ -23,6 +23,7 @@ function CardsContainer({ rows }) {
 
 
   return (
+    <div className="wrapper">
     <div className="cards-container">
       <button className="back-btn" onClick={handleClickBack}>
         <img src={arrowLeft} alt="arrow to flip back" />
@@ -42,6 +43,7 @@ function CardsContainer({ rows }) {
       <button className="forward-btn" onClick={handleClickForward} onAnimationEnd={() => setAnimationStart(false)}>
         <img src={arrowRight} alt="arrow to flip forward" />
       </button>
+    </div>
     </div>
   );
 }

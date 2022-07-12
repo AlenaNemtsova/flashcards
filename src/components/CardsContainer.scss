@@ -1,11 +1,17 @@
+.wrapper {
+    height: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .cards-container {
     display: flex;
-    gap: 5%;
     justify-content: center;
     align-items: center;
+    gap: 5%;
 
-    width: 70%;
-    margin: 50px auto;
+    width: 80%;
+    margin: 0px auto;
 }
 
 .back-btn,

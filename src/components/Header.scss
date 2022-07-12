@@ -1,16 +1,48 @@
-.header {
-    width: 60%;
-    background-color: #FFD600;
-    margin: 0 auto;
+.main-header {
+    background-color: #fbda36;
     position: sticky;
+    top: 0px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__bar {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo-container {
+    padding: 20px 0;
+}
+
+.header__logo {
+    font-size: 22px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.header__menu {
+    width: 40%;
     border-radius: 0px 0px 50px 50px;
     display: flex;
     flex-direction: row;
     
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+
+
+// .logo {
+//     width: ;
+// }
 
 a {
     text-decoration: none;

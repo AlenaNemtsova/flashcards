@@ -1,13 +1,15 @@
 .flashcard-wrapper {
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
+    height: 50vh;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
 }
 
 .animated {
-        animation: flipInX;
-        animation-duration: 1s;
-    }
+    animation: flipInX;
+    animation-duration: 1s;
+}
 
 
 .flashcard {
@@ -15,7 +17,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
 
-    height: 50vh;
+    height: 100%;
     word-break: break-word; //break-all?
 }
 
