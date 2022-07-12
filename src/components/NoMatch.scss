@@ -1,0 +1,25 @@
+.noMatch__img {
+    width: 100px;
+}
+
+.noMatch__text {
+    font-size: 32px;
+    font-weight: 400px;
+    color: rgb(142, 142, 142);
+
+}
+
+.noMatch__text_small {
+    margin-top: 50px;
+    font-size: 28px;
+    font-weight: 400px;
+    color: rgb(142, 142, 142);
+    
+    :hover {
+        color: lightblue;
+      }
+}
+
+.noMatch__link {  
+    color: #fbda36;
+}
