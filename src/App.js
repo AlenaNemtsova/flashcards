@@ -3,6 +3,8 @@ import Header from './components/Header';
 import FlashCard from './components/FlashCard';
 import WordsList from './components/WordsList';
 import CardsContainer from './components/CardsContainer';
+import NoMatch from './components/NoMatch';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // import './assets/styles/mainStyles.scss'; переменные не подключаются
 
@@ -20,17 +22,22 @@ const rows = [
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      <CardsContainer rows={rows}>
-        <FlashCard />
-      </CardsContainer>
-      <WordsList rows={rows}></WordsList>
-      
-      <footer>
+    <BrowserRouter>
+      <div className="App">
+        <Header className="header"/>
+        <Routes>
+          <Route path='/' element={<WordsList rows={rows} />}/>
+          <Route path='/dictionary' element={<WordsList rows={rows} />}/>
+          <Route path='/learn' element={<CardsContainer className="cards" rows={rows}><FlashCard /></CardsContainer>}/>
+          <Route path='/quiz' />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
 
-      </footer>
-    </div>
+        <footer>
+
+        </footer>
+      </div>
+    </BrowserRouter>
   );
 }
 
