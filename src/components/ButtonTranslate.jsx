@@ -2,15 +2,15 @@ import React from 'react';
 
 
 function ButtonTranslate(props) {
-    const handleChange = () => {
+    const handleClick = () => {
         props.setPressed(!props.pressed);
+        props.countWords();
     }
-    console.log(props);
 
     return (
         <div className="flashcard__translation">
             {props.pressed ? <span>{props.russian}</span> : 
-            <button className="translate-btn" onClick={handleChange}>Перевод</button>}
+            <button className="translate-btn" onClick={handleClick}>Перевод</button>}
         </div>
     )
 }

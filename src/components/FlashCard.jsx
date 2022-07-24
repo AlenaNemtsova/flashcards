@@ -2,7 +2,7 @@ import ButtonTranslate from './ButtonTranslate';
 import './FlashCard.scss';
 import 'animate.css';
 
-function FlashCard({tags = "tag", english = "english word", russian = "russian word", transcription = "transcription", pressed ={pressed}, setPressed = {setPressed}, animationStart}) {
+function FlashCard({tags = "tag", english = "english word", russian = "russian word", transcription = "transcription", pressed ={pressed}, setPressed = {setPressed}, animationStart, countWords={countWords}, ref}) {
 
     console.log(animationStart);
 
@@ -12,7 +12,7 @@ function FlashCard({tags = "tag", english = "english word", russian = "russian w
                 <h4 className='flashcard__title'>{tags}</h4>
                 <p className='flashcard__source'>{english}</p>
                 <p className='flashcard__transcription'>{transcription}</p>
-                <ButtonTranslate pressed={pressed} setPressed = {setPressed} russian={russian}></ButtonTranslate> 
+                <ButtonTranslate pressed={pressed} setPressed = {setPressed} countWords={countWords} russian={russian} ref={ref}></ButtonTranslate> 
             </div>
 
         </div>
