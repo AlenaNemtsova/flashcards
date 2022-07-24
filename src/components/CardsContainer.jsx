@@ -1,8 +1,9 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import "./CardsContainer.scss";
 import FlashCard from "./FlashCard";
 import arrowLeft from "../assets/images/left-arrow.svg";
 import arrowRight from "../assets/images/right-arrow.svg";
+import { useRef, useEffect } from 'react';
 
 function CardsContainer({ rows }) {
   const [index, setIndex] = useState(0);
@@ -10,20 +11,19 @@ function CardsContainer({ rows }) {
   const [animationStart, setAnimationStart] = useState(false);
   const [learnedWords, setLearnedWords] = useState(0);
 
-  const ref = useRef();
+  const ref = useRef(null);
+    useEffect(() => ref.current.focus(), [index]);
 
   const handleClickForward = () => {
     setAnimationStart(true);
     setIndex(index >= rows.length - 1 ? 0 : index + 1);
     setPressed(false);
-    ref.current.focus();
   };
 
   const handleClickBack = () => {
     setAnimationStart(true);
     setIndex(index <= 0 ? rows.length - 1 : index - 1);
     setPressed(false);
-    ref.current.focus();
   };
 
   const countWords = () => {
