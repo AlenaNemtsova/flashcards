@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap");
+//подключить шрифты
+
+@import "vars.scss";
+
+@import "components/CardsContainer.scss";
+@import "components/FlashCard.scss";
+@import "components/Header.scss";
+@import "components/NoMatch.scss";
+@import "components/WordsList.scss";

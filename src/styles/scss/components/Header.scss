@@ -1,0 +1,58 @@
+.main-header {
+  background-color: $yellow-color;
+  position: sticky;
+  top: 0px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  padding: 20px 0;
+}
+
+.header__logo {
+  font-size: 22px;
+  color: $white-color;
+  font-family: $logo-font;
+  font-weight: 500;
+}
+
+.header__menu {
+  width: 40%;
+  border-radius: 0px 0px 50px 50px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo,
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dictionary,
+.learn,
+.quiz {
+  transition: 400ms ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
