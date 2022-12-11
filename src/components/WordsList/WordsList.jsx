@@ -1,6 +1,5 @@
 import React from 'react';
-import './WordsList.scss';
-import TableRow from './TableRow';
+import TableRow from '../TableRow/TableRow';
 
 function WordsList({ rows }) {
 

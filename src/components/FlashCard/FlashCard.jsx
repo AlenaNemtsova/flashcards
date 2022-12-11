@@ -1,8 +1,8 @@
-import ButtonTranslate from './ButtonTranslate';
-import './FlashCard.scss';
+import { forwardRef } from 'react';
+import ButtonTranslate from '../ButtonTranslate/ButtonTranslate';
 import 'animate.css';
 // import { useRef, useEffect } from 'react';
-import { forwardRef } from 'react';
+
 
 
 const FlashCard = forwardRef(({ tags, english, russian, transcription, pressed = { pressed }, setPressed = { setPressed }, animationStart, countWords = { countWords } }, ref) => {

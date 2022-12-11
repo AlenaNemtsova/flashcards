@@ -1,8 +1,4 @@
 import React, { useState } from 'react'
-import pencilIcon from '../assets/images/pencil5-icon.svg';
-import deleteIcon from '../assets/images/trash-icon.svg';
-import cancelIcon from '../assets/images/cancel2-cross-icon.svg'
-
 
 function TableRow({ row }) {
     const [isEditMode, setIsEditMode] = useState(false);
@@ -20,7 +16,7 @@ function TableRow({ row }) {
         setEditedField(event.target.value);
         console.log(event.target.value);
     }
-    
+
 
     return (
         <>
@@ -38,11 +34,11 @@ function TableRow({ row }) {
                 {isEditMode ?
                     <>
                         <button className='save-btn'>Сохранить</button>
-                        <button className='cancel-btn' onClick={handleCancel}><img src={cancelIcon}></img></button>
+                        <button className='cancel-btn' onClick={handleCancel}><img src='assets/img/cancel2-cross-icon.svg' alt='cancel button icon'></img></button>
                     </> :
                     <>
-                        <button className='edit-btn' onClick={handleEdit}><img src={pencilIcon}></img></button>
-                        <button className='delete-btn' ><img src={deleteIcon}></img></button>
+                        <button className='edit-btn' onClick={handleEdit}><img src='assets/img/pencil5-icon.svg' alt='edit button icon'></img></button>
+                        <button className='delete-btn' ><img src='assets/img/trash-icon.svg' alt='delete button icon'></img></button>
                     </>
                 }
             </td>
