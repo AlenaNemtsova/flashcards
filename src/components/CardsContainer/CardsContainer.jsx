@@ -12,13 +12,13 @@ function CardsContainer({ rows }) {
   useEffect(() => ref.current.focus(), [index]);
 
   const handleClickForward = () => {
-    setAnimationStart(true);
+    setAnimationStart(false);
     setIndex(index >= rows.length - 1 ? 0 : index + 1);
     setPressed(false);
   };
 
   const handleClickBack = () => {
-    setAnimationStart(true);
+    setAnimationStart(false);
     setIndex(index <= 0 ? rows.length - 1 : index - 1);
     setPressed(false);
   };
@@ -45,11 +45,14 @@ function CardsContainer({ rows }) {
           pressed={pressed}
           setPressed={setPressed}
           animationStart={animationStart}
+          setAnimationStart={setAnimationStart}
           countWords={countWords}
           ref={ref}
         ></FlashCard>
 
-        <button className="forward-btn" onClick={handleClickForward} onAnimationEnd={() => setAnimationStart(false)}>
+
+        <button className="forward-btn" onClick={handleClickForward} >
+          {/* <button className="forward-btn" onClick={handleClickForward} onAnimationEnd={() => setAnimationStart(false)} > */}
           <img src="assets/img/right-arrow.svg" alt="arrow to flip forward" />
         </button>
       </div>

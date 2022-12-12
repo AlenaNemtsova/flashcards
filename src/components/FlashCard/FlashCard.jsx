@@ -2,14 +2,16 @@ import { forwardRef } from 'react';
 import ButtonTranslate from '../ButtonTranslate/ButtonTranslate';
 import 'animate.css';
 // import { useRef, useEffect } from 'react';
+import { useEffect } from 'react';
 
 
 
-const FlashCard = forwardRef(({ tags, english, russian, transcription, pressed = { pressed }, setPressed = { setPressed }, animationStart, countWords = { countWords } }, ref) => {
+const FlashCard = forwardRef(({ id, tags, english, russian, transcription, pressed = { pressed }, setPressed = { setPressed }, animationStart, setAnimationStart, countWords = { countWords } }, ref) => {
 
-    console.log(animationStart);
-    //     const ref = useRef();
-    //     useEffect(() => ref.current.focus(), [])
+    useEffect(() => {
+        console.log(animationStart);
+        setAnimationStart(id)
+    }, [id]);
 
     return (
         <div className={(animationStart ? "flashcard-wrapper animated" : "flashcard-wrapper")}>
