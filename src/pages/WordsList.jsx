@@ -1,7 +1,8 @@
 import React from 'react';
-import TableRow from '../TableRow/TableRow';
+import TableRow from '../components/TableRow/TableRow';
+import data from '../data/data.json';
 
-function WordsList({ rows }) {
+function WordsList() {
 
     return (
         <React.Fragment>
@@ -15,10 +16,10 @@ function WordsList({ rows }) {
                     </tr>
                 </thead>
                 <tbody>
-                    {rows.map((row) =>
-                        <tr key={row.id}>
+                    {data.map((item) =>
+                        <tr key={item.id}>
 
-                            <TableRow row={row}></TableRow>
+                            <TableRow item={item}></TableRow>
                         </tr>
                     )
                     }
