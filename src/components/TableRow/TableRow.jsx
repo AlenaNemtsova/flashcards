@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-function TableRow({ row }) {
+function TableRow({ item }) {
     const [isEditMode, setIsEditMode] = useState(false);
     const [editedField, setEditedField] = useState('');
 
@@ -21,14 +21,14 @@ function TableRow({ row }) {
     return (
         <>
             <td>
-                {isEditMode ? <input type="text" defaultValue={editedField ? editedField.english : row.english} onChange={handleChangeField}></input> : row.english}
+                {isEditMode ? <input type="text" defaultValue={editedField ? editedField.english : item.english} onChange={handleChangeField}></input> : item.english}
             </td>
 
             <td>
-                {isEditMode ? <input type="text" defaultValue={row.russian}></input> : row.russian}
+                {isEditMode ? <input type="text" defaultValue={item.russian}></input> : item.russian}
             </td>
             <td>
-                {isEditMode ? <input type="text" defaultValue={row.transcription}></input> : row.transcription}
+                {isEditMode ? <input type="text" defaultValue={item.transcription}></input> : item.transcription}
             </td>
             <td className='row-control-btns'>
                 {isEditMode ?
