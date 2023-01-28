@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 function Header() {
     return (
@@ -7,48 +7,41 @@ function Header() {
             <div className='header container'>
                 <div className='header__bar'>
                     <div className='logo-container'>
-                        <Link to='/' className='header__logo'>
+                        <NavLink to='/' className='header__logo'>
                             <img className='logo' src='assets/img/speech-bubble.svg' alt='logo'></img>
-                            Flashcards</Link>
+                            Flashcards</NavLink>
                     </div>
 
                     <nav className='header__menu menu'>
 
 
-                        <div to='/' className='dictionary'>
+                        <NavLink to='/dictionary' >
                             <div className='dictionary__icon'>
-                                <Link to='/dictionary'>
-                                    <img className='icon' src='assets/img/book-icon.svg' alt='dictionary icon'></img>
-                                </Link>
-
+                                <img className='icon' src='assets/img/book-icon.svg' alt='dictionary icon'></img>
                             </div>
-                            <div className='dictionary__title'>
-                                <Link to='/dictionary'>Словарь</Link>
+                            <div className='dictionary__title dictionary'>
+                                <span>Словарь</span>
                             </div>
-                        </div>
-                        <div className='learn'>
+                        </NavLink>
+                        <NavLink to='/learn' className='learn'>
                             <div className='learn__icon'>
-                                <Link to='/learn'>
-                                    <img className='icon' src='assets/img/brain-icon.svg' alt='learn words icon'></img>
-                                </Link>
+                                <img className='icon' src='assets/img/brain-icon.svg' alt='learn words icon'></img>
                             </div>
                             <div className='learn__title'>
-                                <Link to='/learn'>Учить слова</Link>
+                                <span>Учить слова</span>
                             </div>
 
-                        </div>
-                        <div className='quiz'>
+                        </NavLink>
+                        <NavLink to='/quiz' className='quiz'>
                             <div className='quiz__icon'>
-                                <Link to='/quiz'>
-                                    <img className='icon' src='assets/img/lightbulbon.svg' alt='quiz icon'></img>
-                                </Link>
+                                <img className='icon' src='assets/img/lightbulbon.svg' alt='quiz icon'></img>
                             </div>
                             <div className='quiz__title'>
-                                <Link to='/quiz'>Проверь себя</Link>
+                                <span>Проверь себя</span>
                             </div>
 
 
-                        </div>
+                        </NavLink>
 
                     </nav>
                 </div>
