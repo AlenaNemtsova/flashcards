@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useEffect } from 'react';
-import Card from "../components/Card/Card";
+// import Card from "../components/Card/Card";
 import data from '../data/data.json';
+import 'animate.css';
 
 function CardsContainer() {
   const [index, setIndex] = useState(0);
@@ -23,7 +24,9 @@ function CardsContainer() {
   };
 
   useEffect(() => {
-    setIsAnimated(true)
+    console.log(isAnimated);
+    console.log(index);
+    setIsAnimated(true);
   }, [index]);
 
   const countWords = () => {

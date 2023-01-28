@@ -1,5 +1,4 @@
 import Header from '../components/Header/Header';
-import Card from '../components/Card/Card';
 import WordsList from './WordsList';
 import CardsContainer from './CardsContainer';
 import NoMatch from './NoMatch';
@@ -15,7 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<WordsList />} />
         <Route path='/dictionary' element={<WordsList />} />
-        <Route path='/learn' element={<CardsContainer className="cards" ><Card /></CardsContainer>} />
+        <Route path='/learn' element={<CardsContainer className="cards" />} />
         <Route path='/quiz' />
         <Route path="*" element={<NoMatch />} />
       </Routes>
