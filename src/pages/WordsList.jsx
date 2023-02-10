@@ -1,8 +1,13 @@
 import React from 'react';
 import TableRow from '../components/TableRow/TableRow';
 import data from '../data/data.json';
+import { useEffect, useRef } from 'react';
 
 function WordsList() {
+    const ref = useRef();
+    useEffect(() => {
+        ref.current.focus();
+    }, []);
 
     return (
         <React.Fragment>
@@ -12,10 +17,24 @@ function WordsList() {
                         <th>Английский</th>
                         <th>Русский</th>
                         <th>Транскрипция</th>
-                        <th></th>
+                        <th>Редактировать</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>
+                            <input ref={ref}></input>
+                        </td>
+                        <td>
+                            <input></input>
+                        </td>
+                        <td>
+                            <input></input>
+                        </td>
+                        <td>
+                            <button className='save-btn'>Сохранить</button>
+                        </td>
+                    </tr>
                     {data.map((item) =>
                         <tr key={item.id}>
 
@@ -23,21 +42,6 @@ function WordsList() {
                         </tr>
                     )
                     }
-
-                    <tr>
-                        <td>
-                            <input placeholder='Термин'></input>
-                        </td>
-                        <td>
-                            <input placeholder='Перевод'></input>
-                        </td>
-                        <td>
-                            <input placeholder='Транскрипция'></input>
-                        </td>
-                        <td>
-                            <button className='save-btn'>Сохранить</button>
-                        </td>
-                    </tr>
 
                 </tbody>
 
