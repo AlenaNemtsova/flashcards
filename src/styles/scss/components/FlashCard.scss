@@ -51,8 +51,7 @@
   border-radius: 5px;
 
   &:focus {
-    outline: invert;
-    // background-color: $green-hover;
+    border: 2px solid blue;
   }
 
   &:hover {

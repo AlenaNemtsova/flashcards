@@ -1,15 +1,30 @@
 table {
   table-layout: fixed;
   width: 80%;
-  margin: 20px auto;
+  margin: 50px auto;
   background-color: $white-color;
   color: $darkgrey-color;
   border-collapse: collapse;
+  font-size: 20px;
 }
 
 th,
 td {
   border: 1px solid $grey-color;
+  height: 50px;
+}
+
+th {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+button {
+  font-size: 18px;
+}
+
+input {
+  font-size: 18px;
 }
 
 .row-control-btns {
@@ -28,7 +43,6 @@ td {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   &:hover {
-    // background-color: #dbb700;
     background-color: rgb(252, 225, 92);
   }
   &:active {
@@ -52,7 +66,6 @@ td {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   &:hover {
-    // background-color: rgb(152, 54, 54);
     background-color: rgb(247, 99, 99);
   }
 
@@ -78,7 +91,6 @@ td {
   color: white;
 
   &:hover {
-    // background-color: rgb(47, 139, 62);
     background-color: $green-hover;
   }
 
@@ -105,7 +117,6 @@ td {
   }
 
   &:hover {
-    // background-color: #991a1a;
     background-color: rgb(247, 99, 99);
   }
   &:active {
@@ -114,7 +125,7 @@ td {
   }
 }
 
-//раскрашиваем каждую вторую сктроку, кроме шапки
+//раскрашиваем каждую вторую строку, кроме шапки
 tbody tr:nth-child(odd) {
   background-color: rgb(231, 231, 231);
 }
