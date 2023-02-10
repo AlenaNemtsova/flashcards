@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 // import Card from "../components/Card/Card";
 import data from '../data/data.json';
 import 'animate.css';
@@ -10,6 +10,11 @@ function CardsContainer() {
   const [isAnimated, setIsAnimated] = useState(false);
   const [learnedWords, setLearnedWords] = useState(0);
 
+  const ref = useRef();
+  useEffect(() => {
+    ref.current.focus();
+    console.log(index);
+  }, [index]);
 
   const handleClickNext = () => {
     setIsAnimated(false);
@@ -24,7 +29,7 @@ function CardsContainer() {
   };
 
   useEffect(() => {
-    console.log(isAnimated);
+    // console.log(isAnimated);
     console.log(index);
     setIsAnimated(true);
   }, [index]);
@@ -32,7 +37,7 @@ function CardsContainer() {
   const countWords = () => {
     setLearnedWords(learnedWords + 1);
   };
-  // console.log(learnedWords);
+  console.log(learnedWords);
 
   const handleClick = () => {
     setPressed(!pressed);
@@ -54,7 +59,7 @@ function CardsContainer() {
             <p className='flashcard__transcription'>{data[index].transcription}</p>
             <div className="flashcard__translation">
               {pressed ? <span>{data[index].russian}</span> :
-                <button className="translate-btn" onClick={handleClick}>Перевод</button>}
+                <button className="translate-btn" onClick={handleClick} ref={ref}>Перевод</button>}
             </div>
           </div>
         </div>
@@ -63,6 +68,9 @@ function CardsContainer() {
         <button className="forward-btn" onClick={handleClickNext} >
           <img src="assets/img/right-arrow.svg" alt="arrow to next card" />
         </button>
+      </div>
+      <div className="learned-words">
+        Выучено слов: {learnedWords}/{data.length}
       </div>
     </div>
   );
