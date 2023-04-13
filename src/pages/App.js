@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<WordsList />} />
         <Route path='/dictionary' element={<WordsList />} />
-        <Route path='/learn' element={<CardsContainer className="cards" />} />
+        <Route path='/learn' element={<CardsContainer />} />
         <Route path='/quiz' />
         <Route path="*" element={<NoMatch />} />
       </Routes>
