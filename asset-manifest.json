@@ -1,13 +1,22 @@
 {
   "files": {
-    "main.css": "/flashcards/static/css/main.d9c6ddb8.css",
-    "main.js": "/flashcards/static/js/main.9e2e43a8.js",
+    "main.css": "/flashcards/static/css/main.f171f6c9.css",
+    "main.js": "/flashcards/static/js/main.140ae28a.js",
+    "static/media/lightbulbon.svg": "/flashcards/static/media/lightbulbon.4ca41fbb9d0e62ebf3bccc88a4047029.svg",
+    "static/media/book-icon.svg": "/flashcards/static/media/book-icon.70dafb5b38ee01db92db6ade2b5a2019.svg",
+    "static/media/ghost.svg": "/flashcards/static/media/ghost.403a6147d15361896b769891263ddc4b.svg",
+    "static/media/trash-icon.svg": "/flashcards/static/media/trash-icon.420824536e03db9811ecb0279d4ae3c2.svg",
+    "static/media/brain-icon.svg": "/flashcards/static/media/brain-icon.f05ff9b85050ebea5d01463e78f277ff.svg",
+    "static/media/speech-bubble.svg": "/flashcards/static/media/speech-bubble.c80d5639a6fe82624cc2cba406cbb1ee.svg",
+    "static/media/pencil5-icon.svg": "/flashcards/static/media/pencil5-icon.3ea3e7692597652458e1e95f4f0863c9.svg",
+    "static/media/cancel2-cross-icon.svg": "/flashcards/static/media/cancel2-cross-icon.761cb1ec31401bc539c25087a0a6ed09.svg",
     "index.html": "/flashcards/index.html",
-    "main.d9c6ddb8.css.map": "/flashcards/static/css/main.d9c6ddb8.css.map",
-    "main.9e2e43a8.js.map": "/flashcards/static/js/main.9e2e43a8.js.map"
+    "static/media/hamburger-icon.svg": "/flashcards/static/media/hamburger-icon.28c2d6a9540b176505ac1b08262410b9.svg",
+    "main.f171f6c9.css.map": "/flashcards/static/css/main.f171f6c9.css.map",
+    "main.140ae28a.js.map": "/flashcards/static/js/main.140ae28a.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9c6ddb8.css",
-    "static/js/main.9e2e43a8.js"
+    "static/css/main.f171f6c9.css",
+    "static/js/main.140ae28a.js"
   ]
 }
