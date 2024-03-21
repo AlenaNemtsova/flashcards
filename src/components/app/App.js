@@ -1,10 +1,10 @@
-import Header from '../components/Header/Header';
-import WordsList from './WordsList';
-import CardsContainer from './CardsContainer';
-import NoMatch from './NoMatch';
 import { Routes, Route } from 'react-router-dom';
-import '../styles/App.css';
-import '../styles/scss/styles.scss'
+import Header from '../header/Header';
+import WordsList from '../../pages/wordsList/WordsList';
+import CardsContainer from '../../pages/cardsContainer/CardsContainer';
+import NoMatch from '../../pages/noMatch/NoMatch';
+
+import './App.scss';
 
 
 function App() {

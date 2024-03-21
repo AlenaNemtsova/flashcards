@@ -1,7 +1,9 @@
+@import "../../styles/scss/styles.scss";
+
 .flashcard-wrapper {
   width: 100%;
   max-width: 600px;
-  height: 50vh;
+  height: 40vh;
   border-radius: 20px;
   background-color: $white-color;
 }
@@ -27,7 +29,7 @@
 
 .flashcard__source {
   flex-basis: 40%;
-  font-size: 4rem;
+  font-size: 56px;
   margin: 10px auto;
 }
 
@@ -56,5 +58,23 @@
 
   &:hover {
     background-color: $green-hover;
+  }
+}
+
+@media (max-width: 1023px) {
+  .flashcard__source {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .flashcard__source {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 374px) {
+  .flashcard__source {
+    font-size: 24px;
   }
 }

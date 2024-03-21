@@ -1,10 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap");
-//подключить шрифты
 
 @import "vars.scss";
 
-@import "components/CardsContainer.scss";
-@import "components/FlashCard.scss";
-@import "components/Header.scss";
-@import "components/NoMatch.scss";
-@import "components/WordsList.scss";
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh;
+  font-family: $main-font;
+  font-size: $base-text;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: $small-text;
+  }
+}

@@ -1,7 +1,8 @@
-import React from 'react';
-import TableRow from '../components/TableRow/TableRow';
-import data from '../data/data.json';
 import { useEffect, useRef } from 'react';
+import TableRow from '../../components/tableRow/TableRow';
+import data from '../../data/data.json';
+
+import './WordsList.scss';
 
 function WordsList() {
     const ref = useRef();
@@ -10,7 +11,7 @@ function WordsList() {
     }, []);
 
     return (
-        <React.Fragment>
+        <>
             <table>
                 <thead>
                     <tr>
@@ -42,12 +43,9 @@ function WordsList() {
                         </tr>
                     )
                     }
-
                 </tbody>
-
             </table>
-
-        </React.Fragment>
+        </>
     )
 }
 

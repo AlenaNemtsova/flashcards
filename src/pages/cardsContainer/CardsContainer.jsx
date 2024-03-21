@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useEffect, useRef } from 'react';
-// import Card from "../components/Card/Card";
-import data from '../data/data.json';
+import data from '../../data/data.json';
+
+import './CardsContainer.scss';
+import './FlashCard.scss';
 import 'animate.css';
 
 function CardsContainer() {
@@ -13,7 +15,7 @@ function CardsContainer() {
   const ref = useRef();
   useEffect(() => {
     ref.current.focus();
-    console.log(index);
+    // console.log(index);
   }, [index]);
 
   const handleClickNext = () => {
@@ -30,14 +32,14 @@ function CardsContainer() {
 
   useEffect(() => {
     // console.log(isAnimated);
-    console.log(index);
+    // console.log(index);
     setIsAnimated(true);
   }, [index]);
 
   const countWords = () => {
     setLearnedWords(learnedWords + 1);
   };
-  console.log(learnedWords);
+  // console.log(learnedWords);
 
   const handleClick = () => {
     setPressed(!pressed);
@@ -48,9 +50,9 @@ function CardsContainer() {
   return (
     <div className="cards-wrapper">
       <div className="cards-container">
-        <button className="back-btn" onClick={handleClickPrev}>
-          <img src="assets/img/left-arrow.svg" alt="arrow to prev card" />
-        </button>
+        <div className="prew-btn">
+          <div className="prew-btn__arrow" onClick={handleClickPrev}></div>
+        </div>
 
         <div className={(isAnimated ? "flashcard-wrapper animated" : "flashcard-wrapper")}>
           <div className='flashcard'>
@@ -64,10 +66,10 @@ function CardsContainer() {
           </div>
         </div>
 
+        <div className="next-btn">
+          <div className="next-btn__arrow" onClick={handleClickNext}></div>
+        </div>
 
-        <button className="forward-btn" onClick={handleClickNext} >
-          <img src="assets/img/right-arrow.svg" alt="arrow to next card" />
-        </button>
       </div>
       <div className="learned-words">
         Выучено слов: {learnedWords}/{data.length}

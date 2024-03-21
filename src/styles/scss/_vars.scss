@@ -1,21 +1,26 @@
-$main-color: #3e1f5e;
-$yellow-color: #fbda36;
-$red-color: #e34d4d;
-$blue-color: #75c9e3;
-$lightblue-color: #add8e6;
-$white-color: #ffffff;
-$grey-color: #8e8e8e;
-$darkgrey-color: #202020;
+$violet-color: rgb(62, 31, 94);
+$violet-lihgt-color: rgb(111, 69, 153);
+$yellow-color: rgb(251, 218, 54);
+$red-color: rgb(227, 77, 77);
+$blue-color: rgb(117, 201, 227);
+$lightblue-color: rgb(173, 216, 230);
+$white-color: rgb(255, 255, 255);
+$grey-color: rgb(142, 142, 142);
+$darkgrey-color: rgb(32, 32, 32);
 $shadow-color: rgba(0, 0, 0, 0.2);
 
 $yellow-btn: rgb(255, 214, 0);
+$yellow-hover: rgb(255, 214, 0, 0.8);
 $red-btn: rgb(202, 55, 55);
+$red-hover: rgb(202, 55, 55, 0.8);
 $green-btn: #38c64f;
-$green-hover: #69e17d;
+$green-hover: rgba(105, 225, 125, 0.8);
 
+$main-font: "Noto Sans", sans-serif;
 $logo-font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
   "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
-$small-text: 16px;
+$small-text: 14px;
+$base-text: 16px;
 $medium-text: 20px;
 $large-text: 24px;
